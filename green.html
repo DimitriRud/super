@@ -1,0 +1,25 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+//Currency rates
+
+var UsdRate = "28";
+var EurRate = "32";
+
+//Input values
+var c = prompt("На скільки гривень ви хочете купити валюти?");
+var c = parseFloat(c);
+
+UsdRate = parseInt(UsdRate);
+EurRate = parseInt(EurRate);
+c = parseInt(c);
+
+//Present to user 
+
+var d = (c / UsdRate).toFixed(2);
+alert("За " + c + " грн. " + "Ви можете купити " + d + " долларів. ");	
+
+var e = (c / EurRate).toFixed(2);
+alert("За " + c + " грн." + "Ви можете купити " + e + " євро. ");
+
+</script>
